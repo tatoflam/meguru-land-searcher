@@ -4,10 +4,12 @@ import os
 import json
 from logging import config, getLogger
 from dotenv import load_dotenv
+from selenium.common.exceptions import NoSuchElementException
 
 from const import LOGGING_CONF
-from auth import login, logoff
-from driver import get_webdriver
+from auth_scraper import Auth
+from menu_scraper import Menu
+from search_scraper import Search
 
 config_dict = None
 with open(LOGGING_CONF, 'r', encoding='utf-8') as f:
@@ -17,6 +19,7 @@ config.dictConfig(config_dict)
 logger = getLogger(__name__)
 
 def run():
+    logger.info("land search batch started.")
     # Parse parameter
     parser = argparse.ArgumentParser()
     parser.add_argument('--num_date', type=int, default=3,
@@ -24,9 +27,29 @@ def run():
     args = parser.parse_args()
     print(args.num_date)
     
-    load_dotenv()
-    driver = get_webdriver()
-    login(driver)
-
+    try:    
+        load_dotenv()
+        Auth().login()
+        Menu().menu.go_search_properties_for_sale()
+        Search().search_properties_for_sale()
+        
+        
+    except NoSuchElementException as e:
+        logger.error("Element not found", exc_info=True)
+    except TimeoutError as e:
+        logger.error("Timeout error occurred", exc_info=True)
+    except Exception as e:
+        logger.error("An exception occurred", exc_info=True)
+    finally:
+        try: 
+            pass
+            # TODO: logoff implementation
+            # logoff(driver)
+            # logger.info("Logoff completed.")        
+        except Exception as e:
+            logger.error("land searcher batch failed.", exc_info=True)
+        finally:
+            logger.info("land search batch finished.")
+        
 if __name__ == "__main__":
     run()

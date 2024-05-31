@@ -1,0 +1,107 @@
+2024-05-30 22:39:17,160 4298704256 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:39:17,592 4298704256 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:39:17,654 4298704256 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:39:17,684 4298704256 INFO WDM log 11 There is no [mac64] chromedriver "125.0.6422.78" for browser google-chrome "125.0.6422" in cache
+2024-05-30 22:39:17,693 4298704256 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:39:17,770 4298704256 INFO WDM log 11 WebDriver version 125.0.6422.78 selected
+2024-05-30 22:39:17,770 4298704256 INFO WDM log 11 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.78/mac-arm64/chromedriver-mac-arm64.zip
+2024-05-30 22:39:17,770 4298704256 INFO WDM log 11 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.78/mac-arm64/chromedriver-mac-arm64.zip
+2024-05-30 22:39:17,863 4298704256 INFO WDM log 11 Driver downloading response is 200
+2024-05-30 22:39:18,125 4298704256 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:39:18,261 4298704256 INFO WDM log 11 Driver has been saved in cache [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78]
+2024-05-30 22:39:18,262 4298704256 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:39:20,076 4298704256 ERROR auth login 31 Element not found
+2024-05-30 22:43:48,010 4306650496 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:43:48,164 4306650496 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:43:48,209 4306650496 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:43:48,243 4306650496 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:43:48,243 4306650496 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:43:49,076 4306650496 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:43:49,551 4306650496 ERROR auth login 31 Element not found
+2024-05-30 22:45:10,589 4376724864 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:45:10,721 4376724864 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:10,757 4376724864 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:10,789 4376724864 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:45:10,789 4376724864 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:45:11,460 4376724864 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:45:11,942 4376724864 ERROR auth login 32 Element not found
+2024-05-30 22:45:27,337 4314842496 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:45:27,502 4314842496 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:27,538 4314842496 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:27,572 4314842496 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:45:27,572 4314842496 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:45:28,309 4314842496 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:45:28,741 4314842496 ERROR auth login 32 Element not found
+2024-05-30 22:45:43,381 4374431104 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:45:43,520 4374431104 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:43,555 4374431104 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:43,590 4374431104 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:45:43,590 4374431104 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:45:44,343 4374431104 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:45:44,808 4374431104 INFO auth login 22 Login is clickable
+2024-05-30 22:45:44,824 4374431104 ERROR auth login 33 Element not found
+2024-05-30 22:45:54,732 4336027008 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:45:54,869 4336027008 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:54,903 4336027008 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:45:54,935 4336027008 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:45:54,935 4336027008 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:45:55,515 4336027008 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:45:56,012 4336027008 INFO auth login 22 Login is clickable
+2024-05-30 22:45:56,019 4336027008 ERROR auth login 33 Element not found
+2024-05-30 22:50:45,340 4367910272 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:50:45,480 4367910272 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:50:45,518 4367910272 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:50:45,549 4367910272 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:50:45,549 4367910272 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:50:46,376 4367910272 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:50:46,829 4367910272 INFO auth login 22 Login is clickable
+2024-05-30 22:50:46,839 4367910272 ERROR auth login 33 Element not found
+2024-05-30 22:51:16,842 4375266688 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:51:16,977 4375266688 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:51:17,014 4375266688 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:51:17,045 4375266688 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:51:17,045 4375266688 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:51:19,243 4375266688 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:51:19,758 4375266688 INFO auth login 22 Login is clickable
+2024-05-30 22:51:21,087 4375266688 ERROR auth login 39 Timeout error occurred
+2024-05-30 22:53:50,064 4377068928 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:53:50,197 4377068928 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:53:50,240 4377068928 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:53:50,271 4377068928 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:53:50,271 4377068928 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:53:52,426 4377068928 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:53:52,791 4377068928 INFO auth login 22 Login is clickable
+2024-05-30 22:53:52,833 4377068928 ERROR auth login 33 Element not found
+2024-05-30 22:55:55,695 4308977024 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:55:55,826 4308977024 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:55:55,861 4308977024 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:55:55,892 4308977024 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:55:55,892 4308977024 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:55:57,638 4308977024 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:55:58,983 4308977024 INFO auth login 22 Login is clickable
+2024-05-30 22:55:58,994 4308977024 ERROR auth login 34 Element not found
+2024-05-30 22:56:51,834 4306486656 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:56:51,967 4306486656 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:56:52,000 4306486656 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:56:52,029 4306486656 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:56:52,030 4306486656 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:56:53,816 4306486656 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:56:54,180 4306486656 INFO auth login 22 Login is clickable
+2024-05-30 22:56:54,185 4306486656 INFO auth login 27 Login is clickable
+2024-05-30 22:56:54,193 4306486656 ERROR auth login 37 Element not found
+2024-05-30 22:59:07,376 4299490688 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 22:59:07,512 4299490688 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:59:07,557 4299490688 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 22:59:07,589 4299490688 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 22:59:07,589 4299490688 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 22:59:09,153 4299490688 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 22:59:09,603 4299490688 INFO auth login 24 Login is clickable
+2024-05-30 22:59:09,607 4299490688 INFO auth login 29 Login is clickable
+2024-05-30 22:59:09,635 4299490688 ERROR auth login 39 Element not found
+2024-05-30 23:02:36,011 4311762304 INFO WDM log 11 ====== WebDriver manager ======
+2024-05-30 23:02:36,150 4311762304 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 23:02:36,187 4311762304 INFO WDM log 11 Get LATEST chromedriver version for google-chrome
+2024-05-30 23:02:36,220 4311762304 INFO WDM log 11 Driver [/Users/tato/.wdm/drivers/chromedriver/mac64/125.0.6422.78/chromedriver-mac-arm64/chromedriver] found in cache
+2024-05-30 23:02:36,220 4311762304 INFO driver get_webdriver 31 Using chromedriver installed by ChromeDriverManager
+2024-05-30 23:02:37,866 4311762304 INFO driver get_webdriver 35 Got webdriver
+2024-05-30 23:02:48,267 4311762304 ERROR auth login 50 Timeout error occurred
