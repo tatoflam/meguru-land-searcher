@@ -38,8 +38,29 @@ class Search(Scraper):
             time.sleep(random.randint(1, 3))
 
     def search_properties_for_sale(self):
+
         self.input_select_options(SEARCH_BASIC_CONDITIONS_SELECT_OPTIONS)
         self.input_values(SEARCH_ADDRESS_STATION_INFO)
+        
+        # storing the current window handle to get back to the main screen
+#        main_page = self.driver.current_window_handle
+
         self.driver.find_element(By.XPATH, SEARCH_BUTTON_XPATH).click()
+
+        # changing the handles to access login page
+#        for handle in self.driver.window_handles:
+#            if handle != main_page:
+#                popup_page = handle
+#        # change the control to signin page        
+#        self.driver.switch_to.window(popup_page)
+
+        wait = WebDriverWait(self.driver, timeout=20)
+        alert = wait.until(lambda d : d.switch_to.alert)
+        text = alert.text
+        logger.info(text)
+        alert.accept()
+#        self.driver.find_element(By.XPATH, None).click()
+        
+        
         time.sleep(20)
         # TODO: handle popup window for the search result confirmation and click "OK"

@@ -34,7 +34,7 @@ def run():
         d.setWebDriver()
         driver = d.getWebDriver()
         
-        Auth(driver).login()
+        Auth(driver).login()        
         Menu(driver).go_search_properties_for_sale()
         Search(driver).search_properties_for_sale()
         
