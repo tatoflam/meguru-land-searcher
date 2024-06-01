@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from selenium.common.exceptions import NoSuchElementException
 
 from const import LOGGING_CONF
+from driver import Driver
 from auth_scraper import Auth
 from menu_scraper import Menu
 from search_scraper import Search
@@ -29,10 +30,13 @@ def run():
     
     try:    
         load_dotenv()
-        Auth().login()
-        Menu().menu.go_search_properties_for_sale()
-        Search().search_properties_for_sale()
+        d = Driver()
+        d.setWebDriver()
+        driver = d.getWebDriver()
         
+        Auth(driver).login()
+        Menu(driver).go_search_properties_for_sale()
+        Search(driver).search_properties_for_sale()
         
     except NoSuchElementException as e:
         logger.error("Element not found", exc_info=True)

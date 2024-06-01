@@ -16,7 +16,6 @@ from scraper import Scraper
 logger = getLogger(__name__)
 
 class Auth(Scraper):
-
     def login(self):
         login_url = os.environ["LOGIN_URL"]
         login_id = os.environ["ID"]
@@ -41,6 +40,7 @@ class Auth(Scraper):
                 
         self.driver.find_element(By.XPATH, LOGIN_BUTTON_XPATH).click()
         logger.info('Login completed')
+
 
     # TODO: implement logoff function. Need to find the way to toggle the hamburger selector with "show" class
     def logoff(self):
