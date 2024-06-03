@@ -12,7 +12,7 @@ logger = getLogger(__name__)
 
 class Menu(Scraper):    
     def go_search_properties_for_sale(self):
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 20)
         wait.until(EC.presence_of_element_located(
             (By.XPATH, MAINMENU_SEARCH_PROPERTIES_BUTTON_XPATH)))
         self.driver.find_element(By.XPATH, MAINMENU_SEARCH_PROPERTIES_BUTTON_XPATH).click()

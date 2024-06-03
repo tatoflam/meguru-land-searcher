@@ -7,5 +7,5 @@ class Scraper():
         self.driver = driver
         
         # sleep random integer value for pretending human operation
-        time.sleep(random.randint(2, 7))
+        time.sleep(random.randint(2, 5))
         
