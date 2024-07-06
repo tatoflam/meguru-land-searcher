@@ -19,16 +19,27 @@ MAINMENU_SEARCH_PROPERTIES_BUTTON_XPATH = '//*[@id="__layout"]/div/div/div[1]/di
 
 # 売買検索条件入力 基本条件
 SEARCH_BASIC_CONDITIONS_SELECT_OPTIONS = {
-    '//*[@id="__BVID__256"]':'売土地', # 物件種別1
-    '//*[@id="__BVID__259"]':'売地', # 物件種目1
-    '//*[@id="__BVID__262"]':'底地権', # 物件種目2
-    '//*[@id="__BVID__265"]':'売一戸建', # 物件種別2
-    '//*[@id="__BVID__268"]':'中古戸建' # 物件種目1
+    '//*[@id="__BVID__265"]':'売土地', # 物件種別1
 }
 # 所在地・沿線
 SEARCH_ADDRESS_STATION_INFO = {
-    '//*[@id="__BVID__309"]':'東京都', # 都道府県
-    '//*[@id="__BVID__313"]':'２３区' # 所在地名1
+    '//*[@id="__BVID__318"]':'東京都', # 都道府県
+    '//*[@id="__BVID__322"]':'２３区' # 所在地名1
 }
+# その他検索項目(在庫のみ)
+SEARCH_DAYS_RADIO_BUTTONS = {
+    '/html/body/div[1]/div/div/div[1]/div[1]/div/div[10]/div/div[3]/div[1]/div/div[2]/div/div/div/div[6]/input':'', # 登録年月日
+    '/html/body/div[1]/div/div/div[1]/div[1]/div/div[10]/div/div[3]/div[2]/div/div[2]/div/div/div/div[6]/input':'', # 
+}
+# 検索条件の選択・保存 (ワンタッチ検索)
+SEARCH_ONE_TOUCH_OPTIONS = {
+    '/html/body/div[1]/div/div/div[1]/div[1]/div/div[1]/div/div/div[2]/div[1]/div/div[2]/select':'01:　売土地２３区前日', # 保存した検索条件の選択
+}
+# 検索条件の選択・保存 (ワンタッチ検索) # 読み込みボタン
+LOAD_ONE_TOUCH_OPTIONS = '//*[@id="__layout"]/div/div[1]/div[1]/div/div[1]/div/div/div[2]/div[2]/div[1]/div[1]/button'
 
 SEARCH_BUTTON_XPATH = '//*[@id="__layout"]/div/div[2]/div/div/div/div/div[4]/button'
+
+RESULT_PAGING_BUTTON = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul/li[7]/button'
+
+RESULT_PAGING_DISABLED = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul/li[7]'

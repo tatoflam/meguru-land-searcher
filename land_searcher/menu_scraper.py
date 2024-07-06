@@ -16,3 +16,4 @@ class Menu(Scraper):
         wait.until(EC.presence_of_element_located(
             (By.XPATH, MAINMENU_SEARCH_PROPERTIES_BUTTON_XPATH)))
         self.driver.find_element(By.XPATH, MAINMENU_SEARCH_PROPERTIES_BUTTON_XPATH).click()
+        logger.info('Main Menu 売買物件検索 clicked')

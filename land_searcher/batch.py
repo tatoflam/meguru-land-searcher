@@ -11,6 +11,7 @@ from driver import Driver
 from auth_scraper import Auth
 from menu_scraper import Menu
 from search_scraper import Search
+from result_scraper import SearchResult
 
 config_dict = None
 with open(LOGGING_CONF, 'r', encoding='utf-8') as f:
@@ -36,7 +37,10 @@ def run():
         
         Auth(driver).login()        
         Menu(driver).go_search_properties_for_sale()
-        Search(driver).search_properties_for_sale()
+        # Search(driver).search_properties_for_sale()
+        Search(driver).search_properties_for_sale_from_menu()
+        SearchResult(driver).result_paging()
+        
         
     except NoSuchElementException as e:
         logger.error("Element not found", exc_info=True)
