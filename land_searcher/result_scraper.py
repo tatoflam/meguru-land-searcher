@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import TimeoutException
 
-from const import RESULT_PAGING_BUTTON, RESULT_PAGING_DISABLED
+from const import RESULT_PAGING_BUTTON, RESULT_PAGING_DISABLED, RESULT_PAGING_UL
 from scraper import Scraper
 
 logger = getLogger(__name__)
@@ -23,6 +23,7 @@ class SearchResult(Scraper):
             table_body = self.driver.find_element(By.CLASS_NAME, 'p-table-body')
 
             # Find all rows in the table body
+            wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'p-table-body-row')))
             rows = table_body.find_elements(By.CLASS_NAME, 'p-table-body-row')
             logger.info(f"result paging: {page} has {len(rows)} entries")
 
@@ -38,8 +39,16 @@ class SearchResult(Scraper):
             time.sleep(2)
                         
             try: 
-                wait.until(EC.presence_of_element_located((By.XPATH, RESULT_PAGING_BUTTON)))
-                paging_button = self.driver.find_element(By.XPATH, RESULT_PAGING_BUTTON)
+#                wait.until(EC.presence_of_element_located((By.XPATH, RESULT_PAGING_BUTTON)))
+#                paging_button = self.driver.find_element(By.XPATH, RESULT_PAGING_BUTTON)
+
+                wait.until(EC.presence_of_element_located((By.XPATH, RESULT_PAGING_UL)))
+                parent_element = self.driver.find_element(By.XPATH, RESULT_PAGING_BUTTON)
+                li_elements = parent_element.find_elements(By.TAG_NAME, 'li')
+                # Get last element
+                last_li_element = li_elements[-1]
+                paging_button = last_li_element.find_element(By.TAG_NAME, 'button')
+
                 class_value = paging_button.get_attribute('class')
                 if 'disabled' not in  class_value:
                     paging_button.click() 

@@ -42,4 +42,6 @@ SEARCH_BUTTON_XPATH = '//*[@id="__layout"]/div/div[2]/div/div/div/div/div[4]/but
 
 RESULT_PAGING_BUTTON = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul/li[7]/button'
 
+RESULT_PAGING_UL = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul'
+
 RESULT_PAGING_DISABLED = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul/li[7]'
