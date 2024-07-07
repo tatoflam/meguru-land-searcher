@@ -1,7 +1,10 @@
 import os
 
+SS_FOLDER_ID = '10QjznC2Mau7zG4QUytxRqUQsnAIigziF'
+
 BASE_DIR = os.path.dirname(__file__)
 LOGGING_CONF = os.path.join(BASE_DIR, 'config/logging.json')
+GOOGLE_CREDENTIAL_JSON = os.path.join(BASE_DIR, 'config/land-searcher-ss-cd912322ecb1.json')
 
 LOGIN_ID_XPATH = '//*[@id="__BVID__13"]'
 LOGIN_PASSWORD_XPATH = '//*[@id="__BVID__16"]'
@@ -38,10 +41,14 @@ SEARCH_ONE_TOUCH_OPTIONS = {
 # 検索条件の選択・保存 (ワンタッチ検索) # 読み込みボタン
 LOAD_ONE_TOUCH_OPTIONS = '//*[@id="__layout"]/div/div[1]/div[1]/div/div[1]/div/div/div[2]/div[2]/div[1]/div[1]/button'
 
+# 検索ボタン
 SEARCH_BUTTON_XPATH = '//*[@id="__layout"]/div/div[2]/div/div/div/div/div[4]/button'
 
-RESULT_PAGING_BUTTON = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul/li[7]/button'
-
+# Pagingリンクの親要素
 RESULT_PAGING_UL = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul'
 
-RESULT_PAGING_DISABLED = '/html/body/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[1]/ul/li[7]'
+P_TABLE_HEADER = 'p-table-header'
+P_TABLE_HEADER_ITEM = 'p-table-header-item'
+P_TABLE_BODY = 'p-table-body'
+P_TABLE_BODY_ROW = 'p-table-body-row'
+P_TABLE_BODY_ITEM = 'p-table-body-item'

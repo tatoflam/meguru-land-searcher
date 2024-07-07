@@ -6,12 +6,14 @@ from logging import config, getLogger
 from dotenv import load_dotenv
 from selenium.common.exceptions import NoSuchElementException
 
-from const import LOGGING_CONF
+from const import LOGGING_CONF, SS_FOLDER_ID, GOOGLE_CREDENTIAL_JSON
 from driver import Driver
 from auth_scraper import Auth
 from menu_scraper import Menu
 from search_scraper import Search
 from result_scraper import SearchResult
+
+from spread_sheet import Spreadsheet
 
 config_dict = None
 with open(LOGGING_CONF, 'r', encoding='utf-8') as f:
@@ -31,16 +33,18 @@ def run():
     
     try:    
         load_dotenv()
+
         d = Driver()
         d.setWebDriver()
         driver = d.getWebDriver()
         
-        Auth(driver).login()        
+        Auth(driver).login()
         Menu(driver).go_search_properties_for_sale()
-        # Search(driver).search_properties_for_sale()
         Search(driver).search_properties_for_sale_from_menu()
-        SearchResult(driver).result_paging()
+        data = SearchResult(driver).result_paging()
         
+        spreadsheet = Spreadsheet(GOOGLE_CREDENTIAL_JSON, data, SS_FOLDER_ID)
+        spreadsheet.update()
         
     except NoSuchElementException as e:
         logger.error("Element not found", exc_info=True)

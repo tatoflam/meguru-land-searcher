@@ -1,4 +1,7 @@
 selenium
 webdriver-manager
 python-dotenv
+gspread
+oauth2client
+pytz
 # slackweb
