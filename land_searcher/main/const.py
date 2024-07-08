@@ -1,10 +1,10 @@
 import os
 
-SS_FOLDER_ID = '10QjznC2Mau7zG4QUytxRqUQsnAIigziF'
+SS_FOLDER_ID = '1q1F2BuDk17D6RSa4E6jhmitH93cvgGFo'
 
 BASE_DIR = os.path.dirname(__file__)
-LOGGING_CONF = os.path.join(BASE_DIR, 'config/logging.json')
-GOOGLE_CREDENTIAL_JSON = os.path.join(BASE_DIR, 'config/land-searcher-ss-cd912322ecb1.json')
+LOGGING_CONF = os.path.join(BASE_DIR, '..','config','logging.json')
+GOOGLE_CREDENTIAL_JSON = os.path.join(BASE_DIR, '..','config','land-searcher-ss-cd912322ecb1.json')
 
 LOGIN_ID_XPATH = '//*[@id="__BVID__13"]'
 LOGIN_PASSWORD_XPATH = '//*[@id="__BVID__16"]'
@@ -52,3 +52,5 @@ P_TABLE_HEADER_ITEM = 'p-table-header-item'
 P_TABLE_BODY = 'p-table-body'
 P_TABLE_BODY_ROW = 'p-table-body-row'
 P_TABLE_BODY_ITEM = 'p-table-body-item'
+
+RIGHT_ALIGNED_COLUMNS_INDICES = [3, 6, 8, 10, 11, 14] # with 0 started index

@@ -18,7 +18,7 @@ setup(
     url="private",
     packages=find_packages("land_searcher"),
     package_dir={"": "land_searcher"},
-    py_modules=[splitext(basename(path))[0] for path in glob('land_searcher/*.py')],
+    py_modules=[splitext(basename(path))[0] for path in glob('land_searcher/main/*.py')],
     include_package_data=True,
     zip_safe=False,
     install_requires=_requires_from_file('requirements.txt'),

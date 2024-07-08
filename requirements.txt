@@ -2,6 +2,12 @@ selenium
 webdriver-manager
 python-dotenv
 gspread
+gspread-formatting
 oauth2client
 pytz
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+google-api-python-client
+pytest
 # slackweb

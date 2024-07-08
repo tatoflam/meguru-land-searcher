@@ -63,6 +63,7 @@ class Search(Scraper):
             ok_button = modal_visible.find_element(By.CSS_SELECTOR, 'button.btn.btn-primary')
             # Click the "OK" button
             ok_button.click()
+            time.sleep(5)
             
             logger.info("OK button clicked successfully.")
         except Exception as e:
@@ -79,7 +80,7 @@ class Search(Scraper):
         logger.info("Search button was clicked")
         
         self.select_modal_ok()        
-        time.sleep(20)
+        time.sleep(5)
         
     def search_properties_for_sale_from_menu(self):
         wait = WebDriverWait(self.driver, 10)
